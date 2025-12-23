@@ -1,0 +1,29 @@
+[package]
+name = "mathwords"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "mathwords"
+crate-type = ["cdylib"]
+
+[dependencies]
+# PyO3 for Python bindings
+pyo3 = { version = "0.27", features = ["extension-module", "anyhow"] }
+
+# Core conversion libraries
+math-core = "0.1.1"
+mathcat = "0.7.6-beta.1"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# For embedding resources at compile time
+include_dir = "0.7"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+strip = true

@@ -1,0 +1,208 @@
+================================================================================
+Testing mathwords on 'Attention Is All You Need' Paper
+================================================================================
+
+Found 10 LaTeX files:
+  - sqrt_d_trick.tex
+  - introduction.tex
+  - why_self_attention.tex
+  - parameter_attention.tex
+  - background.tex
+  - ms.tex
+  - results.tex
+  - training.tex
+  - visualizations.tex
+  - model_architecture.tex
+
+Extracting math expressions...
+Found 297 math expressions total
+
+Unique expressions: 147
+
+================================================================================
+Testing expressions with mathwords...
+================================================================================
+
+Processed 10/147 expressions...
+Processed 20/147 expressions...
+Processed 30/147 expressions...
+Processed 40/147 expressions...
+Processed 50/147 expressions...
+Processed 60/147 expressions...
+Processed 70/147 expressions...
+Processed 80/147 expressions...
+Processed 90/147 expressions...
+Processed 100/147 expressions...
+Processed 110/147 expressions...
+Processed 120/147 expressions...
+Processed 130/147 expressions...
+Processed 140/147 expressions...
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+
+Total unique expressions: 147
+Successful conversions:   130 (88.4%)
+Failed conversions:       17 (11.6%)
+
+================================================================================
+SUCCESSFUL CONVERSIONS (Sample)
+================================================================================
+
+1. [sqrt_d_trick.tex] (inline_dollar)
+   LaTeX: \sqrt{d_k}
+   Verbalized: the square root of d sub k
+
+2. [sqrt_d_trick.tex] (inline_dollar)
+   LaTeX: q
+   Verbalized: q
+
+3. [sqrt_d_trick.tex] (inline_dollar)
+   LaTeX: k
+   Verbalized: k
+
+4. [sqrt_d_trick.tex] (inline_dollar)
+   LaTeX: d_k
+   Verbalized: d sub k
+
+5. [sqrt_d_trick.tex] (inline_dollar)
+   LaTeX: 0
+   Verbalized: 0
+
+6. [sqrt_d_trick.tex] (inline_dollar)
+   LaTeX: 1
+   Verbalized: 1
+
+7. [sqrt_d_trick.tex] (inline_dollar)
+   LaTeX: q \cdot k = \sum_{i=1}^{d_k} u_iv_i
+   Verbalized: q times k, is equal to; the sum from i is equal to 1 to d sub k, of; u sub i, v sub i
+
+8. [sqrt_d_trick.tex] (inline_dollar)
+   LaTeX: \vec{u}
+   Verbalized: u with right arrow above embellishment above
+
+9. [sqrt_d_trick.tex] (inline_dollar)
+   LaTeX: \vec{v}
+   Verbalized: v with right arrow above embellishment above
+
+10. [sqrt_d_trick.tex] (inline_dollar)
+   LaTeX: E[<\vec{u},\vec{v}>] = \sum_{i=1}^{d_k} E[u_i]E[v_i]
+   Verbalized: cap e of; the interval from is less than, u with right arrow above embellishment above to v with right arrow above embellishment above; is greater than, including is less than, u with right arrow above embellishment above and v with right arrow above embellishment above; is greater than; is equal to; the sum from i is equal to 1 to d sub k, of;  cap e of, open bracket u sub i, close bracket;  cap e of, open bracket v sub i, close bracket
+
+11. [sqrt_d_trick.tex] (inline_dollar)
+   LaTeX: E[(<\vec{u},\vec{v}>-E[<\vec{u},\vec{v}>])^2] = \sum_{i=1}^{d_k} E[({u_i}-E[u_i]...
+   Verbalized: cap e of; open bracket; open paren; is less than, u with right arrow above embellishment above; comma; v with right arrow above embellishment above; is greater than; negative  cap e of; open bracket; is less than, u with right arrow above embellishment above; comma; v with right arrow above embellishment above; is greater than; close bracket; close paren squared; close bracket; is equal to; the sum from i is equal to 1 to d sub k, of;  cap e of; open bracket; open paren; u sub i, minus,  cap e of, open bracket u sub i, close bracket; close paren squared; close bracket;  cap e of; open bracket; open paren; v sub i, minus,  cap e of, open bracket v sub i, close bracket; close paren squared; close bracket
+
+12. [introduction.tex] (inline_dollar)
+   LaTeX: h_t
+   Verbalized: h sub t
+
+13. [introduction.tex] (inline_dollar)
+   LaTeX: h_{t-1}
+   Verbalized: h sub t minus 1  end sub
+
+14. [introduction.tex] (inline_dollar)
+   LaTeX: t
+   Verbalized: t
+
+15. [why_self_attention.tex] (inline_dollar)
+   LaTeX: {x_1, ..., x_n} \in \mathbb{R}^d
+   Verbalized: x sub 1, comma, dot dot dot, comma, x sub n; is a member of, the real numbers to the d-th power
+
+16. [why_self_attention.tex] (inline_dollar)
+   LaTeX: {y_1, ..., y_n} \in \mathbb{R}^d
+   Verbalized: y sub 1, comma, dot dot dot, comma, y sub n; is a member of, the real numbers to the d-th power
+
+17. [why_self_attention.tex] (inline_dollar)
+   LaTeX: (x_1, ..., x_n)
+   Verbalized: open paren; x sub 1, comma, dot dot dot, comma, x sub n; close paren
+
+18. [why_self_attention.tex] (inline_dollar)
+   LaTeX: (z_1, ..., z_n)
+   Verbalized: open paren; z sub 1, comma, dot dot dot, comma, z sub n; close paren
+
+19. [why_self_attention.tex] (inline_dollar)
+   LaTeX: x_i, z_i \in \mathbb{R}^d
+   Verbalized: x sub i, comma; z sub i, is a member of, the real numbers to the d-th power
+
+20. [why_self_attention.tex] (inline_dollar)
+   LaTeX: n
+   Verbalized: n
+
+================================================================================
+FAILED CONVERSIONS
+================================================================================
+
+
+Error Type: Failed to convert LaTeX to MathML (17 occurrences)
+--------------------------------------------------------------------------------
+  1. [parameter_attention.tex]
+     LaTeX: \dmodel
+     Error: Failed to convert LaTeX to MathML: Conversion failed: LatexError(0, UnknownCommand("dmodel"))
+
+  2. [parameter_attention.tex]
+     LaTeX: \dff
+     Error: Failed to convert LaTeX to MathML: Conversion failed: LatexError(0, UnknownCommand("dff"))
+
+  3. [model_architecture.tex]
+     LaTeX: \dmodel=512
+     Error: Failed to convert LaTeX to MathML: Conversion failed: LatexError(0, UnknownCommand("dmodel"))
+
+  4. [model_architecture.tex]
+     LaTeX: W^Q_i \in \mathbb{R}^{\dmodel \times d_k}
+     Error: Failed to convert LaTeX to MathML: Conversion failed: LatexError(22, UnknownCommand("dmodel"))
+
+  5. [model_architecture.tex]
+     LaTeX: W^K_i \in \mathbb{R}^{\dmodel \times d_k}
+     Error: Failed to convert LaTeX to MathML: Conversion failed: LatexError(22, UnknownCommand("dmodel"))
+
+     ... and 12 more
+
+================================================================================
+INTERESTING EXAMPLES FROM THE PAPER
+================================================================================
+
+1. Key Formula from sqrt_d_trick.tex
+   LaTeX: \sqrt{d_k}
+   Verbalized: the square root of d sub k
+
+2. Key Formula from parameter_attention.tex
+   LaTeX: Softmax(qK_T)_i
+   Verbalized: Softmax;   open paren, q  cap k sub  cap t; close paren sub i
+
+3. Key Formula from parameter_attention.tex
+   LaTeX: \sqrt{d_{model}}
+   Verbalized: the square root of d sub model  end sub
+
+4. Key Formula from training.tex
+   LaTeX: attention\_dropout\_rate=0.2
+   Verbalized: attention under bar dropout under bar rate; is equal to 0.2
+
+5. Key Formula from model_architecture.tex
+   LaTeX: \mathrm{LayerNorm}(x + \mathrm{Sublayer}(x))
+   Verbalized: LayerNorm of, open paren, x plus Sublayer of x, close paren
+
+6. Key Formula from model_architecture.tex
+   LaTeX: \mathrm{Sublayer}(x)
+   Verbalized: Sublayer of x
+
+7. Key Formula from model_architecture.tex
+   LaTeX: \frac{1}{\sqrt{d_k}}
+   Verbalized: the fraction with numerator 1; and denominator the square root of d sub k
+
+8. Key Formula from model_architecture.tex
+   LaTeX: 1/\sqrt{d_k}
+   Verbalized: 1 divided by, the square root of d sub k
+
+================================================================================
+STATISTICS BY ENVIRONMENT TYPE
+================================================================================
+
+Environment          Total    Success  Failure  Rate    
+------------------------------------------------------------
+inline_dollar        147      130      17       88.4%
+
+================================================================================
+TEST COMPLETE
+================================================================================
